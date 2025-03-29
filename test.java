@@ -1,6 +1,6 @@
  class test {
     public static void main(String[] args) {
-        String str = "madam"; 
+        String str = "anna"; 
         if (isPalindrome(str)) {
             System.out.println(str + " is a palindrome.");
         } else {
