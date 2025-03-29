@@ -1,6 +1,6 @@
  class test {
     public static void main(String[] args) {
-        String str = "madam"; // Change this string to test different cases
+        String str = "madam"; 
         if (isPalindrome(str)) {
             System.out.println(str + " is a palindrome.");
         } else {
