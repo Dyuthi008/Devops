@@ -1,16 +1,23 @@
  class test {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String original = scanner.nextLine();
-        scanner.close();
-
-        String reversed = new StringBuilder(original).reverse().toString();
-
-         if (original.equalsIgnoreCase(reversed)) {
-            System.out.println("The string is a palindrome!");
+        String str = "madam"; // Change this string to test different cases
+        if (isPalindrome(str)) {
+            System.out.println(str + " is a palindrome.");
         } else {
-            System.out.println("The string is NOT a palindrome.");
+            System.out.println(str + " is not a palindrome.");
         }
     }
+
+    public static boolean isPalindrome(String str) {
+        int left = 0, right = str.length() - 1;
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
 }
+
